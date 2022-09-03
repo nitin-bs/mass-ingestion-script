@@ -1,0 +1,40 @@
+{
+  "protocol": "http",
+  "host": "localhost",
+  "port": "3001",
+  "environment_name":"",
+  "environment_storage_name":"Default_Storage",
+  "environment_compute_name":"Default_Persistent_Compute_Template",
+  "sftp_details": {
+        "sftp_host": "",
+        "sftp_port": "",
+        "sftp_username": "",
+        "sftp_base_path": "",
+        "sftp_private_key_file_path": ""
+  },
+  "append_water_marks_columns":["insert_timestamp","LOADDATE","RECADDTS","STARTDATE"],
+  "merge_water_marks_columns":["UPDATEDATE","update_timestamp","REC_UPD_TS","REC CHG TS","it_update_date","order_date","load_dt","src_data_dt"],
+  "ingestion_storage_format":"parquet",
+  "natural_key_regex":".*_nm",
+  "source_extensions_to_add":[""],
+  "file_properties": {
+                    "column_enclosed_by": "\"",
+                    "column_separator": "|",
+                    "encoding": "UTF-8",
+                    "escape_character": "\\",
+                    "header_rows_count": 0
+                },
+  "sfDatabase": "",
+  "sfSchema": "",
+  "sfStageSchema":"",
+  "sfWarehouse": "",
+  "table_groups":[{
+              "name":"TG_1",
+              "environment_compute_name":"Default_Persistent_Compute_Template",
+              "max_parallel_tables":5,
+              "table_names":[]
+
+  }],
+  "run_workflow":false,
+  "poll_workflow":false
+  }

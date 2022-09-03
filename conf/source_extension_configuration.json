@@ -1,0 +1,145 @@
+{
+        "extension_type": "Hive_UDF",
+        "name": "att_source_extensions",
+        "package_name": "io.infoworks.customers.att.udfs",
+        "transformations": [
+            {
+                "alias": "TrimHiveUDF",
+                "additional_params_count": 0,
+                "params_details": []
+            },
+            {
+                "alias": "SubstrHiveUDF",
+                "additional_params_count": 2,
+                "params_details": [
+                    {
+                        "value": "1"
+                    },
+                    {
+                        "value": "2"
+                    }
+                ]
+            },
+            {
+                "alias": "TrimRegexp_replaceHiveUDF",
+                "additional_params_count": 2,
+                "params_details": [
+                    {
+                        "value": "[^:ascii:]"
+                    },
+                    {
+                        "value": ""
+                    }
+                ]
+            },
+            {
+                "alias": "TrimOreplaceSubstrHiveUDF",
+                "additional_params_count": 3,
+                "params_details": [
+                    {
+                        "value": "5"
+                    },
+                    {
+                        "value": "\".\""
+                    },
+                    {
+                        "value": "\"\""
+                    }
+                ]
+            },
+            {
+                "alias": "TimestampTransformerHiveUDF",
+                "additional_params_count": 0,
+                "params_details": []
+            },
+            {
+                "alias": "LitIntegerHiveUDF",
+                "additional_params_count": 0,
+                "params_details": []
+            },
+            {
+                "alias": "LitStringHiveUDF",
+                "additional_params_count": 0,
+                "params_details": []
+            },
+            {
+                "alias": "CoalesceHiveUDF",
+                "additional_params_count": 1,
+                "params_details": [
+                    {
+                        "value": "1"
+                    }
+                ]
+            },
+            {
+                "alias": "CoalesceTrimHiveUDF",
+                "additional_params_count": 1,
+                "params_details": [
+                    {
+                        "value": "\"*\""
+                    }
+                ]
+            },
+            {
+                "alias": "NvlStringHiveUDF",
+                "additional_params_count": 1,
+                "params_details": [
+                    {
+                        "value": "0"
+                    }
+                ]
+            },
+            {
+                "alias": "NvlIntegerHiveUDF",
+                "additional_params_count": 1,
+                "params_details": [
+                    {
+                        "value": "0"
+                    }
+                ]
+            },
+            {
+                "alias": "NvlDoubleHiveUDF",
+                "additional_params_count": 1,
+                "params_details": [
+                    {
+                        "value": "0.0"
+                    }
+                ]
+            },
+            {
+                "alias": "NvlFloatHiveUDF",
+                "additional_params_count": 1,
+                "params_details": [
+                    {
+                        "value": "0.0"
+                    }
+                ]
+            },
+            {
+                "alias": "NvlTrimHiveUDF",
+                "additional_params_count": 1,
+                "params_details": [
+                    {
+                        "value": "0"
+                    }
+                ]
+            },
+            {
+                "alias": "DecimalCleanupHiveUDF",
+                "additional_params_count": 0,
+                "params_details": []
+            },
+            {
+                "alias": "StringToTimestampHiveUDF",
+                "additional_params_count": 0,
+                "params_details": []
+            },
+            {
+                "alias": "NullCheckWithAsDecimalHiveUDF",
+                "additional_params_count": 0,
+                "params_details": []
+            }
+        ],
+        "registered_udf": true
+    }
